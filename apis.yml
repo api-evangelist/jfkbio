@@ -1,7 +1,25 @@
 aid: jfkbio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jfkbio.png
 name: jfkbio
-description: jfkbio is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'jfkbio (今复康生物科技 / JFK Bio) is a biotechnology and life-sciences company
+  in China, surfaced as a portfolio company of the venture firm Qiming and added to
+  the API Evangelist network for enrichment. Its public presence at jfkbio.com is a
+  JavaScript single-page marketing site; no public developer portal, API documentation,
+  OpenAPI definition, or other machine-readable API surface was found during enrichment,
+  so most API artifact types are not applicable to this provider. This profile records
+  what is genuinely observable today (identity and live domain-security posture) and
+  remains a lead pending any future developer or API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/jfkbio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Healthcare
+- Pharmaceuticals
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jfkbio-domain-security.yml
 - type: Website
   url: https://jfkbio.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
